@@ -45,7 +45,7 @@ module.exports = async function (req, res) {
     // Create a new document in Ordersrecipientuserpaymentview collection
     const response = await databases.createDocument(
       req.variables["EXPO_PUBLIC_APPWRITE_DATABASE_ID"], // Database ID
-      req.variables["APPWRITE_ORDERSRECIPIENTUSERPAYMENTVIEW_COLLECTION_ID"], // Collection ID
+      req.variables["EXPO_PUBLIC_APPWRITE_POPULATEORDERSRECIPIENTVIEW_FUNCTION_COLLECTION_ID"], // Collection ID
       ID.unique(), // Generate a unique ID
       recipientViewData
     );
